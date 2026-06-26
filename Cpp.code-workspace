@@ -1,0 +1,50 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		// ===== C++ 编译器（MSYS2 MinGW-w64）=====
+		"C_Cpp.default.compilerPath": "C:/msys64/mingw64/bin/g++.exe",
+		"C_Cpp.default.cppStandard": "c++17",
+		"C_Cpp.default.cStandard": "c11",
+		"C_Cpp.default.intelliSenseMode": "gcc-x64",
+		"C_Cpp.default.includePath": [
+			"C:/msys64/mingw64/include/**",
+			"C:/msys64/mingw64/x86_64-w64-mingw32/include/**",
+			"."
+		],
+		"C_Cpp.default.compilerArgs": [
+			"-Wall",
+			"-Wextra",
+			"-Wpedantic"
+		],
+		"C_Cpp.default.browse.path": [
+			"C:/msys64/mingw64/include/**",
+			"."
+		],
+		"C_Cpp.default.browse.driver": "gcc",
+		"C_Cpp.autocomplete": "default",
+		"C_Cpp.errorSquiggles": "enabled",
+		"C_Cpp.intelliSenseCacheSize": 5120,
+		// ===== 代码格式化 =====
+		"C_Cpp.formatting": "clangFormat",
+		"editor.formatOnSave": true,
+		"editor.tabSize": 4,
+		"editor.insertSpaces": false,
+		"C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, IndentWidth: 4, UseTab: Always }",
+		// ===== 调试配置 =====
+		"debug.allowBreakpointEverywhere": true,
+		// ===== 文件排除 =====
+		"files.exclude": {
+			"**/*.o": true,
+			"**/*.exe": true,
+			"**/build/": true,
+			"**/.vscode/": true
+		},
+		// ===== 终端 =====
+		"terminal.integrated.defaultProfile.windows": "PowerShell",
+		"terminal.integrated.cwd": "${workspaceFolder}"
+	}
+}

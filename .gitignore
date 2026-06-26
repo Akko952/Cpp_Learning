@@ -1,0 +1,8 @@
+# 编译产物
+*.exe
+*.out
+*.o
+*.obj
+
+# VSCode 工作区（保留 tasks.json 和 launch.json）
+# .vscode/ 默认被 files.exclude 隐藏，此处显式跟踪配置文件
