@@ -94,7 +94,8 @@ class NeuralNetworkSoftmax {
                const std::vector<std::vector<double>> &targets,
                double learning_rate, size_t epochs,
                size_t batch_size = 1, bool verbose = true,
-               size_t batch_report_interval = 0) {
+               size_t batch_report_interval = 0,
+               size_t start_epoch = 0) {
         if (inputs.size() != targets.size()) {
             throw std::runtime_error(
                 "Inputs and targets must have the same number of samples.");
@@ -127,8 +128,8 @@ class NeuralNetworkSoftmax {
 
         if (verbose) {
             std::stringstream data;
-            data << "Training started: " << epochs << " epochs, " << dataset_size
-                 << " samples, batch size: " << batch_size
+            data << "Training started: " << epochs << " epochs (from epoch " << (start_epoch + 1) << ")"
+                 << ", " << dataset_size << " samples, batch size: " << batch_size
                  << ", initial learning rate: " << learning_rate << "\n";
             data << "learning rate decay: " << (1 - decay_rate) * 100
                  << "%, minimum learning rate: " << min_lr << "\n";
@@ -136,7 +137,7 @@ class NeuralNetworkSoftmax {
             std::cout << data.str();
         }
 
-        for (size_t epoch = 0; epoch < epochs; ++epoch) {
+        for (size_t epoch = start_epoch; epoch < epochs; ++epoch) {
             learning_rate = std::max(min_lr, base_lr * std::pow(decay_rate, epoch));
             double totalLoss = 0.0;
 
@@ -293,7 +294,7 @@ class NeuralNetworkSoftmax {
             if (type == "weight") {
                 weights[layer - 1](std::stoi(rowStr), std::stoi(colStr)) = value;
             } else if (type == "bias") {
-                layers[layer].bias[std::stoi(rowStr)] = value;
+                layers[layer].bias[std::stoi(colStr)] = value;
             }
         }
         file.close();
