@@ -30,7 +30,7 @@
 		"C_Cpp.intelliSenseCacheSize": 5120,
 		// ===== 代码格式化 =====
 		"C_Cpp.formatting": "clangFormat",
-		"editor.formatOnSave": true,
+		"editor.formatOnSave": false,
 		"editor.tabSize": 4,
 		"editor.insertSpaces": false,
 		"C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, IndentWidth: 4, UseTab: Always }",

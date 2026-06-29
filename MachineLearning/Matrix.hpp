@@ -7,14 +7,14 @@
 
 class Matrix {
   private:
-    std::vector<std::vector<double>> data;
+    std::vector<std::vector<double>> data;//定义多行多列的可变数组
     size_t rows;
     size_t cols;
 
   public:
     Matrix(size_t r, size_t c) : rows(r), cols(c) {
-	data.resize(r, std::vector<double>(c, 0.0));
-    };
+	data.resize(r, std::vector<double>(c, 0.0));//全零初始化
+    };//构造函数，生成矩阵
 
     size_t getRows() const { return rows; }
     size_t getCols() const { return cols; }
@@ -26,7 +26,8 @@ class Matrix {
 
 	return data[i][j];
     }
-    const double &operator()(size_t i, size_t j) const { // 重载常量的符号（）
+
+    const double &operator()(size_t i, size_t j) const { // 重载常量矩阵的符号（）
 	if (i >= getRows() || j >= getCols()) {
 	    throw std::out_of_range("Matrix index out of range");
 	}
@@ -56,10 +57,10 @@ class Matrix {
 	return result;
     }
 
-    Matrix &operator*=(double scalar) { // 直接变自身
+    Matrix &operator*=(double scalar) { // 直接改变自身
 	for (size_t i = 0; i < getRows(); ++i) {
 	    for (size_t j = 0; j < getCols(); ++j) {
-		(*this)(i, j) *= scalar;
+		(*this)(i, j) *= scalar;//对数组中每个元素进行缩放，此处的*=是对每个元素进行缩放，而不是矩阵乘法
 	    }
 	}
 	return *this;
