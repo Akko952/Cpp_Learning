@@ -10,9 +10,12 @@
 #include <cmath>
 #include <fstream>
 #include <iostream>
+#include <random>
 #include <sstream>
 #include <stdexcept>
 #include <vector>
+
+enum class InitMethod { Custom, Normal, Xavier, He };
 
 class NeuralNetworkSoftmax {
   private:
@@ -30,18 +33,39 @@ class NeuralNetworkSoftmax {
         }
     }
 
-    void initialize_weights() {
-        for (auto &weight_matrix : weights) {
-            weight_matrix.fillRandom(-1.0, 1.0);
-            weight_matrix *= (2.0 / weight_matrix.getRows());
+    void initialize_weights(InitMethod method = InitMethod::Custom) {
+        static std::mt19937 gen(std::random_device{}());
+        for (size_t idx = 0; idx < weights.size(); ++idx) {
+            auto &weight_matrix = weights[idx];
+            size_t fan_in  = weight_matrix.getRows();
+            size_t fan_out = weight_matrix.getCols();
+
+            if (method == InitMethod::Custom) {
+                weight_matrix.fillRandom(-1.0, 1.0);
+                weight_matrix *= (2.0 / fan_in);
+            } else {
+                double std_dev = 0.01;
+                if (method == InitMethod::Xavier) {
+                    std_dev = std::sqrt(2.0 / (fan_in + fan_out));
+                } else if (method == InitMethod::He) {
+                    std_dev = std::sqrt(2.0 / fan_in);
+                }
+                std::normal_distribution<double> dist(0.0, std_dev);
+                for (size_t i = 0; i < fan_in; ++i) {
+                    for (size_t j = 0; j < fan_out; ++j) {
+                        weight_matrix(i, j) = dist(gen);
+                    }
+                }
+            }
         }
     }
 
   public:
-    NeuralNetworkSoftmax(const std::vector<Layer> &network_layer)
+    NeuralNetworkSoftmax(const std::vector<Layer> &network_layer,
+                         InitMethod init_method = InitMethod::Custom)
         : layers(network_layer) {
         connect_layers();
-        initialize_weights();
+        initialize_weights(init_method);
     }
 
     const std::vector<Layer> &getLayers() const {
@@ -95,7 +119,8 @@ class NeuralNetworkSoftmax {
                double learning_rate, size_t epochs,
                size_t batch_size = 1, bool verbose = true,
                size_t batch_report_interval = 0,
-               size_t start_epoch = 0) {
+               size_t start_epoch = 0,
+               const std::string &save_prefix = "model") {
         if (inputs.size() != targets.size()) {
             throw std::runtime_error(
                 "Inputs and targets must have the same number of samples.");
@@ -237,7 +262,7 @@ class NeuralNetworkSoftmax {
                 std::cout << data.str();
             }
 
-            saveModel("model_epoch_" + std::to_string(epoch + 1) + ".csv");
+            saveModel(save_prefix + "_epoch_" + std::to_string(epoch + 1) + ".csv");
         }
 
         const auto end = std::chrono::high_resolution_clock::now();
