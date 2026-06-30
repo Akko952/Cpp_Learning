@@ -1,0 +1,189 @@
+=== D2L 4.2.7 + 4.3.3 实验开始 ===
+时间: 2026年06月30日  2:46:35
+
+==============================================
+>>> ex1_h64
+    命令: ./main.exe --hiddens 64 --epochs 10 --prefix ex1_h64
+    开始: 02:46:35
+    >>> Test accuracy: 84.54%  (8454/10000)
+
+==============================================
+>>> ex1_h128
+    命令: ./main.exe --hiddens 128 --epochs 10 --prefix ex1_h128
+    开始: 02:47:25
+    >>> Test accuracy: 84.7%  (8470/10000)
+
+==============================================
+>>> ex1_h256
+    命令: ./main.exe --hiddens 256 --epochs 10 --prefix ex1_h256
+    开始: 02:48:59
+    >>> Test accuracy: 84.83%  (8483/10000)
+
+==============================================
+>>> ex1_h512
+    命令: ./main.exe --hiddens 512 --epochs 10 --prefix ex1_h512
+    开始: 02:52:21
+    >>> Test accuracy: 84.76%  (8476/10000)
+
+==============================================
+>>> ex1_h1024
+    命令: ./main.exe --hiddens 1024 --epochs 10 --prefix ex1_h1024
+    开始: 02:59:19
+    >>> Test accuracy: 84.62%  (8462/10000)
+
+==============================================
+>>> ex2_l1
+    命令: ./main.exe --hiddens 256 --layers 1 --epochs 10 --prefix ex2_l1
+    开始: 03:19:01
+    >>> Test accuracy: 84.57%  (8457/10000)
+
+==============================================
+>>> ex2_l2
+    命令: ./main.exe --hiddens 256 --layers 2 --epochs 10 --prefix ex2_l2
+    开始: 03:22:14
+    >>> Test accuracy: 83.45%  (8345/10000)
+
+==============================================
+>>> ex2_l3
+    命令: ./main.exe --hiddens 256 --layers 3 --epochs 10 --prefix ex2_l3
+    开始: 03:26:08
+    >>> Test accuracy: 62.3%  (6230/10000)
+
+==============================================
+>>> ex3_lr001
+    命令: ./main.exe --lr 0.001 --epochs 10 --prefix ex3_lr001
+    开始: 03:30:09
+    >>> Test accuracy: 19.93%  (1993/10000)
+
+==============================================
+>>> ex3_lr01
+    命令: ./main.exe --lr 0.01 --epochs 10 --prefix ex3_lr01
+    开始: 03:33:22
+    >>> Test accuracy: 73.99%  (7399/10000)
+
+==============================================
+>>> ex3_lr05
+    命令: ./main.exe --lr 0.05 --epochs 10 --prefix ex3_lr05
+    开始: 03:36:37
+    >>> Test accuracy: 82.83%  (8283/10000)
+
+==============================================
+>>> ex3_lr1
+    命令: ./main.exe --lr 0.1 --epochs 10 --prefix ex3_lr1
+    开始: 03:39:51
+    >>> Test accuracy: 84.76%  (8476/10000)
+
+==============================================
+>>> ex3_lr5
+    命令: ./main.exe --lr 0.5 --epochs 10 --prefix ex3_lr5
+    开始: 03:43:03
+    >>> Test accuracy: 86.13%  (8613/10000)
+
+==============================================
+>>> ex3_lr10
+    命令: ./main.exe --lr 1.0 --epochs 10 --prefix ex3_lr10
+    开始: 03:46:25
+    >>> Test accuracy: 20.12%  (2012/10000)
+
+==============================================
+>>> ex4_combo1
+    命令: ./main.exe --lr 0.05 --hiddens 256 --layers 1 --epochs 15 --prefix ex4_combo1
+    开始: 03:49:37
+    >>> Test accuracy: 84.13%  (8413/10000)
+
+==============================================
+>>> ex4_combo2
+    命令: ./main.exe --lr 0.05 --hiddens 256 --layers 2 --epochs 15 --prefix ex4_combo2
+    开始: 03:54:37
+    >>> Test accuracy: 79.67%  (7967/10000)
+
+==============================================
+>>> ex4_combo3
+    命令: ./main.exe --lr 0.05 --hiddens 512 --layers 1 --epochs 15 --prefix ex4_combo3
+    开始: 04:00:25
+    >>> Test accuracy: 84%  (8400/10000)
+
+==============================================
+>>> ex4_combo4
+    命令: ./main.exe --lr 0.05 --hiddens 512 --layers 2 --epochs 15 --prefix ex4_combo4
+    开始: 04:11:34
+    >>> Test accuracy: 77.53%  (7753/10000)
+
+==============================================
+>>> ex4_combo5
+    命令: ./main.exe --lr 0.1 --hiddens 256 --layers 1 --epochs 20 --prefix ex4_combo5
+    开始: 04:26:46
+    >>> Test accuracy: 86.47%  (8647/10000)
+
+==============================================
+>>> ex4_combo6
+    命令: ./main.exe --lr 0.1 --hiddens 256 --layers 2 --epochs 20 --prefix ex4_combo6
+    开始: 04:33:06
+    >>> Test accuracy: 86.08%  (8608/10000)
+
+==============================================
+>>> ex4_combo7
+    命令: ./main.exe --lr 0.1 --hiddens 512 --layers 1 --epochs 20 --prefix ex4_combo7
+    开始: 04:40:44
+    >>> Test accuracy: 86.61%  (8661/10000)
+
+==============================================
+>>> ex4_combo8
+    命令: ./main.exe --lr 0.1 --hiddens 512 --layers 2 --epochs 20 --prefix ex4_combo8
+    开始: 04:54:54
+    >>> Test accuracy: 86.27%  (8627/10000)
+
+==============================================
+>>> ex4_combo9
+    命令: ./main.exe --lr 0.01 --hiddens 128 --layers 1 --epochs 30 --prefix ex4_combo9
+    开始: 05:16:48
+    >>> Test accuracy: 82.06%  (8206/10000)
+
+==============================================
+>>> ex4_combo10
+    命令: ./main.exe --lr 0.01 --hiddens 256 --layers 2 --epochs 30 --prefix ex4_combo10
+    开始: 05:21:06
+    >>> Test accuracy: 73.25%  (7325/10000)
+
+==============================================
+>>> ex5_relu
+    命令: ./main.exe --activation relu --epochs 10 --prefix ex5_relu
+    开始: 05:34:23
+    >>> Test accuracy: 84.75%  (8475/10000)
+
+==============================================
+>>> ex5_sigmoid
+    命令: ./main.exe --activation sigmoid --epochs 10 --prefix ex5_sigmoid
+    开始: 05:37:42
+    >>> Test accuracy: 80.55%  (8055/10000)
+
+==============================================
+>>> ex6_custom
+    命令: ./main.exe --init custom --epochs 10 --prefix ex6_custom
+    开始: 05:41:11
+    >>> Test accuracy: 84.93%  (8493/10000)
+
+==============================================
+>>> ex6_normal
+    命令: ./main.exe --init normal --epochs 10 --prefix ex6_normal
+    开始: 05:44:24
+    >>> Test accuracy: 84.99%  (8499/10000)
+
+==============================================
+>>> ex6_xavier
+    命令: ./main.exe --init xavier --epochs 10 --prefix ex6_xavier
+    开始: 05:47:43
+    >>> Test accuracy: 85.58%  (8558/10000)
+
+==============================================
+>>> ex6_he
+    命令: ./main.exe --init he --epochs 10 --prefix ex6_he
+    开始: 05:50:54
+    >>> Test accuracy: 85.94%  (8594/10000)
+
+
+==============================================
+  全部实验完成!
+  总耗时: 187分29秒
+  结束时间: 2026年06月30日  5:54:04
+==============================================

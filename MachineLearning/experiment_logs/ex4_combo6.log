@@ -1,0 +1,294 @@
+============================================================
+  MLP Experiment
+  hiddens=256  layers=2  lr=0.1  epochs=20  prefix=ex4_combo6
+  activation=ReLU  init=custom
+============================================================
+Loading Fashion-MNIST...
+Train: 60000 images  Test: 10000 images
+Start training on 60000 samples...
+Training started: 20 epochs (from epoch 1), 60000 samples, batch size: 256, initial learning rate: 0.1
+learning rate decay: 0.4%, minimum learning rate: 0.0001
+------------------------------------------------------------
+Epoch 1/20, batch 1/235
+Epoch 1/20, batch 24/235
+Epoch 1/20, batch 47/235
+Epoch 1/20, batch 70/235
+Epoch 1/20, batch 93/235
+Epoch 1/20, batch 116/235
+Epoch 1/20, batch 139/235
+Epoch 1/20, batch 162/235
+Epoch 1/20, batch 185/235
+Epoch 1/20, batch 208/235
+Epoch 1/20, batch 231/235
+Epoch 1/20, batch 235/235
+[5%] Epoch: 1 | CE: 2.26279
+Model saved to ex4_combo6_epoch_1.csv
+Epoch 2/20, batch 1/235
+Epoch 2/20, batch 24/235
+Epoch 2/20, batch 47/235
+Epoch 2/20, batch 70/235
+Epoch 2/20, batch 93/235
+Epoch 2/20, batch 116/235
+Epoch 2/20, batch 139/235
+Epoch 2/20, batch 162/235
+Epoch 2/20, batch 185/235
+Epoch 2/20, batch 208/235
+Epoch 2/20, batch 231/235
+Epoch 2/20, batch 235/235
+[10%] Epoch: 2 | CE: 1.32521
+Model saved to ex4_combo6_epoch_2.csv
+Epoch 3/20, batch 1/235
+Epoch 3/20, batch 24/235
+Epoch 3/20, batch 47/235
+Epoch 3/20, batch 70/235
+Epoch 3/20, batch 93/235
+Epoch 3/20, batch 116/235
+Epoch 3/20, batch 139/235
+Epoch 3/20, batch 162/235
+Epoch 3/20, batch 185/235
+Epoch 3/20, batch 208/235
+Epoch 3/20, batch 231/235
+Epoch 3/20, batch 235/235
+[15%] Epoch: 3 | CE: 0.913475
+Model saved to ex4_combo6_epoch_3.csv
+Epoch 4/20, batch 1/235
+Epoch 4/20, batch 24/235
+Epoch 4/20, batch 47/235
+Epoch 4/20, batch 70/235
+Epoch 4/20, batch 93/235
+Epoch 4/20, batch 116/235
+Epoch 4/20, batch 139/235
+Epoch 4/20, batch 162/235
+Epoch 4/20, batch 185/235
+Epoch 4/20, batch 208/235
+Epoch 4/20, batch 231/235
+Epoch 4/20, batch 235/235
+[20%] Epoch: 4 | CE: 0.748573
+Model saved to ex4_combo6_epoch_4.csv
+Epoch 5/20, batch 1/235
+Epoch 5/20, batch 24/235
+Epoch 5/20, batch 47/235
+Epoch 5/20, batch 70/235
+Epoch 5/20, batch 93/235
+Epoch 5/20, batch 116/235
+Epoch 5/20, batch 139/235
+Epoch 5/20, batch 162/235
+Epoch 5/20, batch 185/235
+Epoch 5/20, batch 208/235
+Epoch 5/20, batch 231/235
+Epoch 5/20, batch 235/235
+[25%] Epoch: 5 | CE: 0.629324
+Model saved to ex4_combo6_epoch_5.csv
+Epoch 6/20, batch 1/235
+Epoch 6/20, batch 24/235
+Epoch 6/20, batch 47/235
+Epoch 6/20, batch 70/235
+Epoch 6/20, batch 93/235
+Epoch 6/20, batch 116/235
+Epoch 6/20, batch 139/235
+Epoch 6/20, batch 162/235
+Epoch 6/20, batch 185/235
+Epoch 6/20, batch 208/235
+Epoch 6/20, batch 231/235
+Epoch 6/20, batch 235/235
+[30%] Epoch: 6 | CE: 0.567286
+Model saved to ex4_combo6_epoch_6.csv
+Epoch 7/20, batch 1/235
+Epoch 7/20, batch 24/235
+Epoch 7/20, batch 47/235
+Epoch 7/20, batch 70/235
+Epoch 7/20, batch 93/235
+Epoch 7/20, batch 116/235
+Epoch 7/20, batch 139/235
+Epoch 7/20, batch 162/235
+Epoch 7/20, batch 185/235
+Epoch 7/20, batch 208/235
+Epoch 7/20, batch 231/235
+Epoch 7/20, batch 235/235
+[35%] Epoch: 7 | CE: 0.525717
+Model saved to ex4_combo6_epoch_7.csv
+Epoch 8/20, batch 1/235
+Epoch 8/20, batch 24/235
+Epoch 8/20, batch 47/235
+Epoch 8/20, batch 70/235
+Epoch 8/20, batch 93/235
+Epoch 8/20, batch 116/235
+Epoch 8/20, batch 139/235
+Epoch 8/20, batch 162/235
+Epoch 8/20, batch 185/235
+Epoch 8/20, batch 208/235
+Epoch 8/20, batch 231/235
+Epoch 8/20, batch 235/235
+[40%] Epoch: 8 | CE: 0.489733
+Model saved to ex4_combo6_epoch_8.csv
+Epoch 9/20, batch 1/235
+Epoch 9/20, batch 24/235
+Epoch 9/20, batch 47/235
+Epoch 9/20, batch 70/235
+Epoch 9/20, batch 93/235
+Epoch 9/20, batch 116/235
+Epoch 9/20, batch 139/235
+Epoch 9/20, batch 162/235
+Epoch 9/20, batch 185/235
+Epoch 9/20, batch 208/235
+Epoch 9/20, batch 231/235
+Epoch 9/20, batch 235/235
+[45%] Epoch: 9 | CE: 0.46037
+Model saved to ex4_combo6_epoch_9.csv
+Epoch 10/20, batch 1/235
+Epoch 10/20, batch 24/235
+Epoch 10/20, batch 47/235
+Epoch 10/20, batch 70/235
+Epoch 10/20, batch 93/235
+Epoch 10/20, batch 116/235
+Epoch 10/20, batch 139/235
+Epoch 10/20, batch 162/235
+Epoch 10/20, batch 185/235
+Epoch 10/20, batch 208/235
+Epoch 10/20, batch 231/235
+Epoch 10/20, batch 235/235
+[50%] Epoch: 10 | CE: 0.437312
+Model saved to ex4_combo6_epoch_10.csv
+Epoch 11/20, batch 1/235
+Epoch 11/20, batch 24/235
+Epoch 11/20, batch 47/235
+Epoch 11/20, batch 70/235
+Epoch 11/20, batch 93/235
+Epoch 11/20, batch 116/235
+Epoch 11/20, batch 139/235
+Epoch 11/20, batch 162/235
+Epoch 11/20, batch 185/235
+Epoch 11/20, batch 208/235
+Epoch 11/20, batch 231/235
+Epoch 11/20, batch 235/235
+[55%] Epoch: 11 | CE: 0.41875
+Model saved to ex4_combo6_epoch_11.csv
+Epoch 12/20, batch 1/235
+Epoch 12/20, batch 24/235
+Epoch 12/20, batch 47/235
+Epoch 12/20, batch 70/235
+Epoch 12/20, batch 93/235
+Epoch 12/20, batch 116/235
+Epoch 12/20, batch 139/235
+Epoch 12/20, batch 162/235
+Epoch 12/20, batch 185/235
+Epoch 12/20, batch 208/235
+Epoch 12/20, batch 231/235
+Epoch 12/20, batch 235/235
+[60%] Epoch: 12 | CE: 0.40369
+Model saved to ex4_combo6_epoch_12.csv
+Epoch 13/20, batch 1/235
+Epoch 13/20, batch 24/235
+Epoch 13/20, batch 47/235
+Epoch 13/20, batch 70/235
+Epoch 13/20, batch 93/235
+Epoch 13/20, batch 116/235
+Epoch 13/20, batch 139/235
+Epoch 13/20, batch 162/235
+Epoch 13/20, batch 185/235
+Epoch 13/20, batch 208/235
+Epoch 13/20, batch 231/235
+Epoch 13/20, batch 235/235
+[65%] Epoch: 13 | CE: 0.390169
+Model saved to ex4_combo6_epoch_13.csv
+Epoch 14/20, batch 1/235
+Epoch 14/20, batch 24/235
+Epoch 14/20, batch 47/235
+Epoch 14/20, batch 70/235
+Epoch 14/20, batch 93/235
+Epoch 14/20, batch 116/235
+Epoch 14/20, batch 139/235
+Epoch 14/20, batch 162/235
+Epoch 14/20, batch 185/235
+Epoch 14/20, batch 208/235
+Epoch 14/20, batch 231/235
+Epoch 14/20, batch 235/235
+[70%] Epoch: 14 | CE: 0.37884
+Model saved to ex4_combo6_epoch_14.csv
+Epoch 15/20, batch 1/235
+Epoch 15/20, batch 24/235
+Epoch 15/20, batch 47/235
+Epoch 15/20, batch 70/235
+Epoch 15/20, batch 93/235
+Epoch 15/20, batch 116/235
+Epoch 15/20, batch 139/235
+Epoch 15/20, batch 162/235
+Epoch 15/20, batch 185/235
+Epoch 15/20, batch 208/235
+Epoch 15/20, batch 231/235
+Epoch 15/20, batch 235/235
+[75%] Epoch: 15 | CE: 0.368624
+Model saved to ex4_combo6_epoch_15.csv
+Epoch 16/20, batch 1/235
+Epoch 16/20, batch 24/235
+Epoch 16/20, batch 47/235
+Epoch 16/20, batch 70/235
+Epoch 16/20, batch 93/235
+Epoch 16/20, batch 116/235
+Epoch 16/20, batch 139/235
+Epoch 16/20, batch 162/235
+Epoch 16/20, batch 185/235
+Epoch 16/20, batch 208/235
+Epoch 16/20, batch 231/235
+Epoch 16/20, batch 235/235
+[80%] Epoch: 16 | CE: 0.358927
+Model saved to ex4_combo6_epoch_16.csv
+Epoch 17/20, batch 1/235
+Epoch 17/20, batch 24/235
+Epoch 17/20, batch 47/235
+Epoch 17/20, batch 70/235
+Epoch 17/20, batch 93/235
+Epoch 17/20, batch 116/235
+Epoch 17/20, batch 139/235
+Epoch 17/20, batch 162/235
+Epoch 17/20, batch 185/235
+Epoch 17/20, batch 208/235
+Epoch 17/20, batch 231/235
+Epoch 17/20, batch 235/235
+[85%] Epoch: 17 | CE: 0.350123
+Model saved to ex4_combo6_epoch_17.csv
+Epoch 18/20, batch 1/235
+Epoch 18/20, batch 24/235
+Epoch 18/20, batch 47/235
+Epoch 18/20, batch 70/235
+Epoch 18/20, batch 93/235
+Epoch 18/20, batch 116/235
+Epoch 18/20, batch 139/235
+Epoch 18/20, batch 162/235
+Epoch 18/20, batch 185/235
+Epoch 18/20, batch 208/235
+Epoch 18/20, batch 231/235
+Epoch 18/20, batch 235/235
+[90%] Epoch: 18 | CE: 0.342452
+Model saved to ex4_combo6_epoch_18.csv
+Epoch 19/20, batch 1/235
+Epoch 19/20, batch 24/235
+Epoch 19/20, batch 47/235
+Epoch 19/20, batch 70/235
+Epoch 19/20, batch 93/235
+Epoch 19/20, batch 116/235
+Epoch 19/20, batch 139/235
+Epoch 19/20, batch 162/235
+Epoch 19/20, batch 185/235
+Epoch 19/20, batch 208/235
+Epoch 19/20, batch 231/235
+Epoch 19/20, batch 235/235
+[95%] Epoch: 19 | CE: 0.334977
+Model saved to ex4_combo6_epoch_19.csv
+Epoch 20/20, batch 1/235
+Epoch 20/20, batch 24/235
+Epoch 20/20, batch 47/235
+Epoch 20/20, batch 70/235
+Epoch 20/20, batch 93/235
+Epoch 20/20, batch 116/235
+Epoch 20/20, batch 139/235
+Epoch 20/20, batch 162/235
+Epoch 20/20, batch 185/235
+Epoch 20/20, batch 208/235
+Epoch 20/20, batch 231/235
+Epoch 20/20, batch 235/235
+[100%] Epoch: 20 | CE: 0.328309
+Model saved to ex4_combo6_epoch_20.csv
+Training completed in 454 seconds.
+
+>>> Test accuracy: 86.08%  (8608/10000)

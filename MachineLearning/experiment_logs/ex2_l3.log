@@ -1,0 +1,154 @@
+============================================================
+  MLP Experiment
+  hiddens=256  layers=3  lr=0.1  epochs=10  prefix=ex2_l3
+  activation=ReLU  init=custom
+============================================================
+Loading Fashion-MNIST...
+Train: 60000 images  Test: 10000 images
+Start training on 60000 samples...
+Training started: 10 epochs (from epoch 1), 60000 samples, batch size: 256, initial learning rate: 0.1
+learning rate decay: 0.4%, minimum learning rate: 0.0001
+------------------------------------------------------------
+Epoch 1/10, batch 1/235
+Epoch 1/10, batch 24/235
+Epoch 1/10, batch 47/235
+Epoch 1/10, batch 70/235
+Epoch 1/10, batch 93/235
+Epoch 1/10, batch 116/235
+Epoch 1/10, batch 139/235
+Epoch 1/10, batch 162/235
+Epoch 1/10, batch 185/235
+Epoch 1/10, batch 208/235
+Epoch 1/10, batch 231/235
+Epoch 1/10, batch 235/235
+[10%] Epoch: 1 | CE: 2.30271
+Model saved to ex2_l3_epoch_1.csv
+Epoch 2/10, batch 1/235
+Epoch 2/10, batch 24/235
+Epoch 2/10, batch 47/235
+Epoch 2/10, batch 70/235
+Epoch 2/10, batch 93/235
+Epoch 2/10, batch 116/235
+Epoch 2/10, batch 139/235
+Epoch 2/10, batch 162/235
+Epoch 2/10, batch 185/235
+Epoch 2/10, batch 208/235
+Epoch 2/10, batch 231/235
+Epoch 2/10, batch 235/235
+[20%] Epoch: 2 | CE: 2.30272
+Model saved to ex2_l3_epoch_2.csv
+Epoch 3/10, batch 1/235
+Epoch 3/10, batch 24/235
+Epoch 3/10, batch 47/235
+Epoch 3/10, batch 70/235
+Epoch 3/10, batch 93/235
+Epoch 3/10, batch 116/235
+Epoch 3/10, batch 139/235
+Epoch 3/10, batch 162/235
+Epoch 3/10, batch 185/235
+Epoch 3/10, batch 208/235
+Epoch 3/10, batch 231/235
+Epoch 3/10, batch 235/235
+[30%] Epoch: 3 | CE: 2.30271
+Model saved to ex2_l3_epoch_3.csv
+Epoch 4/10, batch 1/235
+Epoch 4/10, batch 24/235
+Epoch 4/10, batch 47/235
+Epoch 4/10, batch 70/235
+Epoch 4/10, batch 93/235
+Epoch 4/10, batch 116/235
+Epoch 4/10, batch 139/235
+Epoch 4/10, batch 162/235
+Epoch 4/10, batch 185/235
+Epoch 4/10, batch 208/235
+Epoch 4/10, batch 231/235
+Epoch 4/10, batch 235/235
+[40%] Epoch: 4 | CE: 2.30269
+Model saved to ex2_l3_epoch_4.csv
+Epoch 5/10, batch 1/235
+Epoch 5/10, batch 24/235
+Epoch 5/10, batch 47/235
+Epoch 5/10, batch 70/235
+Epoch 5/10, batch 93/235
+Epoch 5/10, batch 116/235
+Epoch 5/10, batch 139/235
+Epoch 5/10, batch 162/235
+Epoch 5/10, batch 185/235
+Epoch 5/10, batch 208/235
+Epoch 5/10, batch 231/235
+Epoch 5/10, batch 235/235
+[50%] Epoch: 5 | CE: 2.30262
+Model saved to ex2_l3_epoch_5.csv
+Epoch 6/10, batch 1/235
+Epoch 6/10, batch 24/235
+Epoch 6/10, batch 47/235
+Epoch 6/10, batch 70/235
+Epoch 6/10, batch 93/235
+Epoch 6/10, batch 116/235
+Epoch 6/10, batch 139/235
+Epoch 6/10, batch 162/235
+Epoch 6/10, batch 185/235
+Epoch 6/10, batch 208/235
+Epoch 6/10, batch 231/235
+Epoch 6/10, batch 235/235
+[60%] Epoch: 6 | CE: 2.30237
+Model saved to ex2_l3_epoch_6.csv
+Epoch 7/10, batch 1/235
+Epoch 7/10, batch 24/235
+Epoch 7/10, batch 47/235
+Epoch 7/10, batch 70/235
+Epoch 7/10, batch 93/235
+Epoch 7/10, batch 116/235
+Epoch 7/10, batch 139/235
+Epoch 7/10, batch 162/235
+Epoch 7/10, batch 185/235
+Epoch 7/10, batch 208/235
+Epoch 7/10, batch 231/235
+Epoch 7/10, batch 235/235
+[70%] Epoch: 7 | CE: 2.27977
+Model saved to ex2_l3_epoch_7.csv
+Epoch 8/10, batch 1/235
+Epoch 8/10, batch 24/235
+Epoch 8/10, batch 47/235
+Epoch 8/10, batch 70/235
+Epoch 8/10, batch 93/235
+Epoch 8/10, batch 116/235
+Epoch 8/10, batch 139/235
+Epoch 8/10, batch 162/235
+Epoch 8/10, batch 185/235
+Epoch 8/10, batch 208/235
+Epoch 8/10, batch 231/235
+Epoch 8/10, batch 235/235
+[80%] Epoch: 8 | CE: 1.62027
+Model saved to ex2_l3_epoch_8.csv
+Epoch 9/10, batch 1/235
+Epoch 9/10, batch 24/235
+Epoch 9/10, batch 47/235
+Epoch 9/10, batch 70/235
+Epoch 9/10, batch 93/235
+Epoch 9/10, batch 116/235
+Epoch 9/10, batch 139/235
+Epoch 9/10, batch 162/235
+Epoch 9/10, batch 185/235
+Epoch 9/10, batch 208/235
+Epoch 9/10, batch 231/235
+Epoch 9/10, batch 235/235
+[90%] Epoch: 9 | CE: 1.33386
+Model saved to ex2_l3_epoch_9.csv
+Epoch 10/10, batch 1/235
+Epoch 10/10, batch 24/235
+Epoch 10/10, batch 47/235
+Epoch 10/10, batch 70/235
+Epoch 10/10, batch 93/235
+Epoch 10/10, batch 116/235
+Epoch 10/10, batch 139/235
+Epoch 10/10, batch 162/235
+Epoch 10/10, batch 185/235
+Epoch 10/10, batch 208/235
+Epoch 10/10, batch 231/235
+Epoch 10/10, batch 235/235
+[100%] Epoch: 10 | CE: 1.08327
+Model saved to ex2_l3_epoch_10.csv
+Training completed in 236 seconds.
+
+>>> Test accuracy: 62.3%  (6230/10000)
